@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Instant Translation</title>
+      <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>Instant Translation</h1>
+        <div class="language-selectors">
+          <select id="sourceLang">
+            <option value="auto">Auto Detect</option>
+          </select>
+          <button id="swapLanguages">⇄</button>
+          <select id="targetLang"></select>
+        </div>
+        <div class="translation-box">
+          <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+          <textarea id="translatedText" readonly></textarea>
+        </div>
+        <button id="copyButton">Copy Translation</button>
+      </div>
+      <script type="module" src="./main.js"></script>
+    </body>
+    </html>
